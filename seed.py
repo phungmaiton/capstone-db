@@ -36,6 +36,7 @@ if __name__ == "__main__":
                 "SGD": 0.075069,
             },
             currency_code="ZAR",
+            img="https://www.andbeyond.com/wp-content/uploads/sites/5/Johannesburg-Skyline.jpg",
         )
 
         db.session.add(city1)
@@ -53,6 +54,7 @@ if __name__ == "__main__":
                 "SGD": 0.075069,
             },
             currency_code="ZAR",
+            img="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg/1200px-Aerial_View_of_Sea_Point%2C_Cape_Town_South_Africa.jpg",
         )
 
         db.session.add(city2)
@@ -70,6 +72,7 @@ if __name__ == "__main__":
                 "SGD": 0.075069,
             },
             currency_code="ZAR",
+            img="https://freedomdestinations.co.uk/wp-content/uploads/Durban3.jpg",
         )
 
         db.session.add(city3)
@@ -87,6 +90,7 @@ if __name__ == "__main__":
                 "SGD": 0.043,
             },
             currency_code="EGP",
+            img="https://ychef.files.bbci.co.uk/976x549/p07zy3y6.jpg",
         )
 
         db.session.add(city4)
@@ -104,6 +108,7 @@ if __name__ == "__main__":
                 "SGD": 0.043,
             },
             currency_code="EGP",
+            img="https://www.egypttoursportal.com/images/2017/11/Alexandria-City-Egypt-Egypt-Tours-Portal.jpg",
         )
 
         db.session.add(city5)
@@ -121,6 +126,7 @@ if __name__ == "__main__":
                 "SGD": 0.043,
             },
             currency_code="EGP",
+            img="https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/029/509/original/8b9fd6c6bff69cc84d5e6a4d6471be34/egypt-luxor-temple.jpg",
         )
 
         db.session.add(city6)
@@ -138,6 +144,7 @@ if __name__ == "__main__":
                 "SGD": 0.0094,
             },
             currency_code="KES",
+            img="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Colors_of_nairobi.jpg/640px-Colors_of_nairobi.jpg",
         )
 
         db.session.add(city7)
@@ -155,6 +162,7 @@ if __name__ == "__main__":
                 "SGD": 0.0094,
             },
             currency_code="KES",
+            img="https://www.momondo.com/rimg/dimg/bb/df/1ee25cb1-city-10373-16d954c9c0e.jpg?width=1366&height=768&xhint=1096&yhint=854&crop=true",
         )
 
         db.session.add(city8)
@@ -172,6 +180,7 @@ if __name__ == "__main__":
                 "SGD": 0.0094,
             },
             currency_code="KES",
+            img="https://hapakenya.com/wp-content/uploads/2018/07/Kisumu-City.jpg",
         )
 
         db.session.add(city9)
@@ -189,6 +198,7 @@ if __name__ == "__main__":
                 "SGD": 0.0017,
             },
             currency_code="NGN",
+            img="https://www.awaytoafrica.com/wp-content/uploads/2020/06/nigeria-lagos-1.jpg",
         )
 
         db.session.add(city10)
@@ -206,6 +216,7 @@ if __name__ == "__main__":
                 "SGD": 0.0017,
             },
             currency_code="NGN",
+            img="https://media.cnn.com/api/v1/images/stellar/prod/221028070729-nigeria-abuja-city-view-file-restricted.jpg?c=original",
         )
 
         db.session.add(city11)
@@ -223,6 +234,7 @@ if __name__ == "__main__":
                 "SGD": 0.0017,
             },
             currency_code="NGN",
+            img="https://facts.net/wp-content/uploads/2023/06/44-facts-about-kano-1688122304.jpeg",
         )
 
         db.session.add(city12)
@@ -240,6 +252,7 @@ if __name__ == "__main__":
                 "SGD": 61.61,
             },
             currency_code="MAD",
+            img="https://www.heatheronhertravels.com/wp-content/uploads/2014/05/casablanca-2807439_1920.jpg.webp",
         )
 
         db.session.add(city13)
@@ -257,6 +270,7 @@ if __name__ == "__main__":
                 "SGD": 61.61,
             },
             currency_code="MAD",
+            img="https://img.theculturetrip.com/wp-content/uploads/2021/05/marrakech-medina-jemaa-el-fna-square-fb64hw.jpg",
         )
 
         db.session.add(city14)
@@ -274,6 +288,7 @@ if __name__ == "__main__":
                 "SGD": 61.61,
             },
             currency_code="MAD",
+            img="https://content.r9cdn.net/rimg/dimg/d5/e5/012dfb42-city-12211-165b4a5fb55.jpg?width=1366&height=768&xhint=1405&yhint=1178&crop=true",
         )
 
         db.session.add(city15)
@@ -291,6 +306,7 @@ if __name__ == "__main__":
                 "SGD": 0.0094,
             },
             currency_code="JPY",
+            img="https://media.cntraveler.com/photos/60341fbad7bd3b27823c9db2/16:9/w_2560%2Cc_limit/Tokyo-2021-GettyImages-1208124099.jpg",
         )
 
         db.session.add(city16)
@@ -308,6 +324,7 @@ if __name__ == "__main__":
                 "SGD": 0.0094,
             },
             currency_code="JPY",
+            img="https://www.gotokyo.org/en/plan/tokyo-outline/images/main.jpg",
         )
 
         db.session.add(city17)
@@ -325,6 +342,7 @@ if __name__ == "__main__":
                 "SGD": 0.016,
             },
             currency_code="INR",
+            img="https://www.travelandleisure.com/thmb/iAIrOVW7yWrDG8pZBpKMOvEGuNQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/new-delhi-india-NEWDELHITG0721-60d592e1603349298a0206d67d08582b.jpg",
         )
 
         db.session.add(city18)
@@ -342,6 +360,7 @@ if __name__ == "__main__":
                 "SGD": 0.016,
             },
             currency_code="INR",
+            img="https://cms.finnair.com/resource/blob/2573910/a14e037941fbe6646a68cd56a8fea9d0/mumbai-main-data.jpg",
         )
 
         db.session.add(city19)
@@ -359,6 +378,7 @@ if __name__ == "__main__":
                 "SGD": 0.016,
             },
             currency_code="INR",
+            img="https://lp-cms-production.imgix.net/2019-06/9483508eeee2b78a7356a15ed9c337a1-bengaluru-bangalore.jpg",
         )
 
         db.session.add(city20)
@@ -376,6 +396,7 @@ if __name__ == "__main__":
                 "SGD": 0.19,
             },
             currency_code="CNY",
+            img="https://i.natgeofe.com/n/2024d353-131c-4c29-a04f-5589c541e980/beijing_travel_16x9.jpg",
         )
 
         db.session.add(city21)
@@ -393,6 +414,7 @@ if __name__ == "__main__":
                 "SGD": 0.19,
             },
             currency_code="CNY",
+            img="https://lp-cms-production.imgix.net/2023-02/GettyImages-1162611090.jpg",
         )
 
         db.session.add(city22)
@@ -410,6 +432,7 @@ if __name__ == "__main__":
                 "SGD": 0.19,
             },
             currency_code="CNY",
+            img="https://gba.investhk.gov.hk/sites/default/files/Guangzhou_5.jpg",
         )
 
         db.session.add(city23)
@@ -427,6 +450,7 @@ if __name__ == "__main__":
                 "SGD": 0.049,
             },
             currency_code="TRY",
+            img="https://a.cdn-hotels.com/gdcs/production6/d781/3bae040b-2afb-4b11-9542-859eeb8ebaf1.jpg",
         )
 
         db.session.add(city24)
@@ -444,6 +468,7 @@ if __name__ == "__main__":
                 "SGD": 0.049,
             },
             currency_code="TRY",
+            img="https://www.nationsonline.org/gallery/Turkey/Kocatepe-mosque-Ankara.jpg",
         )
 
         db.session.add(city25)
@@ -461,6 +486,7 @@ if __name__ == "__main__":
                 "SGD": 0.049,
             },
             currency_code="TRY",
+            img="https://media.cnn.com/api/v1/images/stellar/prod/220829115737-06-izmir-turkey-elevator.jpg?c=original&q=h_618,c_fill",
         )
 
         db.session.add(city26)
@@ -478,6 +504,7 @@ if __name__ == "__main__":
                 "SGD": 0.039,
             },
             currency_code="THB",
+            img="https://cdn.destguides.com/files/store/itinerary/1394/background_image/jpeg_medium_202112291737-4b9732c3c81e2136ccbce9e51ae6fc7f.jpeg",
         )
 
         db.session.add(city27)
@@ -495,6 +522,7 @@ if __name__ == "__main__":
                 "SGD": 0.039,
             },
             currency_code="THB",
+            img="https://res.klook.com/image/upload/Mobile/City/cswglxpstphljdourpfu.jpg",
         )
 
         db.session.add(city28)
@@ -512,6 +540,7 @@ if __name__ == "__main__":
                 "SGD": 0.039,
             },
             currency_code="THB",
+            img="https://www.letsphuket.com/wp-content/uploads/phuket1.jpg",
         )
 
         db.session.add(city29)
@@ -529,6 +558,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://res.klook.com/image/upload/Mobile/City/swox6wjsl5ndvkv5jvum.jpg",
         )
 
         db.session.add(city30)
@@ -546,6 +576,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://theplanetd.com/images/Best-Things-to-do-in-Marseille-France.jpg",
         )
 
         db.session.add(city31)
@@ -563,6 +594,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/da/01/47/vieux-lyon.jpg?w=1200&h=-1&s=1",
         )
 
         db.session.add(city32)
@@ -580,6 +612,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29.jpg/1200px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29.jpg",
         )
 
         db.session.add(city33)
@@ -597,6 +630,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://www.theglobetrottingdetective.com/wp-content/uploads/2021/07/best-day-trips-from-Munich-Neuschwanstein-Castle-Germany.jpg",
         )
 
         db.session.add(city34)
@@ -614,6 +648,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://img.theculturetrip.com/wp-content/uploads/2021/07/2ak0rm3-e1629218784273.jpg",
         )
 
         db.session.add(city35)
@@ -631,6 +666,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://res.klook.com/image/upload/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg",
         )
 
         db.session.add(city36)
@@ -648,6 +684,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://a.cdn-hotels.com/gdcs/production68/d1314/b12f79e7-bcce-4cac-96f8-33f98b9bfb88.jpg",
         )
 
         db.session.add(city37)
@@ -665,6 +702,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://www.iwanderlista.com/wp-content/uploads/2020/09/Venice-Italy-67-1027x685.jpg",
         )
 
         db.session.add(city38)
@@ -682,6 +720,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://media.cntraveller.com/photos/611be916628f4910ed101d18/16:9/w_2992,h_1683,c_limit/parque-del-buen-retiro-gettyimages-873841648.jpg",
         )
 
         db.session.add(city39)
@@ -699,6 +738,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://media.timeout.com/images/105827631/750/422/image.jpg",
         )
 
         db.session.add(city40)
@@ -716,6 +756,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://cdn.britannica.com/79/102579-050-CD542D7F/Sevilla-Spain.jpg",
         )
 
         db.session.add(city41)
@@ -733,6 +774,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://www.travelandleisure.com/thmb/_3nQ1ivxrnTKVphdp9ZYvukADKQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/amsterdam-nl-AMSTERDAMTG0521-6d2bfaac29704667a950bcf219680640.jpg",
         )
 
         db.session.add(city42)
@@ -750,6 +792,7 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://media.cnn.com/api/v1/images/stellar/prod/170221114745-rotterdam-markthal-c-ossip-van-duivenbode1576-rotterdam-partners-editorial.jpg?q=w_1900,h_1069,x_0,y_0,c_fill/h_618",
         )
 
         db.session.add(city43)
@@ -767,13 +810,14 @@ if __name__ == "__main__":
                 "SGD": 1.47,
             },
             currency_code="EUR",
+            img="https://s27363.pcdn.co/wp-content/uploads/2020/05/One-Day-in-Utrecht.jpg.optimal.jpg",
         )
 
         db.session.add(city44)
 
         city45 = City(
             city_name="New York City",
-            state_code="",
+            state_code="NY",
             country_name="United States",
             exchange_rate={
                 "EUR": 0.90,
@@ -784,13 +828,14 @@ if __name__ == "__main__":
                 "SGD": 1.33,
             },
             currency_code="USD",
+            img="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/1200px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
         )
 
         db.session.add(city45)
 
         city46 = City(
             city_name="Los Angeles",
-            state_code="",
+            state_code="CA",
             country_name="United States",
             exchange_rate={
                 "EUR": 0.90,
@@ -801,13 +846,14 @@ if __name__ == "__main__":
                 "SGD": 1.33,
             },
             currency_code="USD",
+            img="https://lacounty.gov/wp-content/uploads/2022/03/shutterstock_1418018357-scaled.jpg",
         )
 
         db.session.add(city46)
 
         city47 = City(
             city_name="Chicago",
-            state_code="",
+            state_code="IL",
             country_name="United States",
             exchange_rate={
                 "EUR": 0.90,
@@ -818,6 +864,7 @@ if __name__ == "__main__":
                 "SGD": 1.33,
             },
             currency_code="USD",
+            img="https://www.travelandleisure.com/thmb/wwUPgdpCUuD5sAPFLQf4YasjH0M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicago-illinois-CHITG0221-e448062fc5164da0bba639f9857987f6.jpg",
         )
 
         db.session.add(city47)
@@ -835,6 +882,7 @@ if __name__ == "__main__":
                 "SGD": 1.01,
             },
             currency_code="CAD",
+            img="https://www.prepareforcanada.com/wp-content/uploads/Torronto-Main-1024x576.jpg",
         )
 
         db.session.add(city48)
@@ -852,6 +900,7 @@ if __name__ == "__main__":
                 "SGD": 1.01,
             },
             currency_code="CAD",
+            img="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Concord_Pacific_Master_Plan_Area.jpg/1200px-Concord_Pacific_Master_Plan_Area.jpg",
         )
 
         db.session.add(city49)
@@ -886,6 +935,7 @@ if __name__ == "__main__":
                 "SGD": 0.079,
             },
             currency_code="MXN",
+            img="https://i.natgeofe.com/n/6c02ad5a-977b-4f12-b9c0-02ffb0736e07/metropolitan-cathedral-zocalo-mexico-city_2x1.JPG",
         )
 
         db.session.add(city51)
@@ -903,6 +953,7 @@ if __name__ == "__main__":
                 "SGD": 0.079,
             },
             currency_code="MXN",
+            img="https://www.mexperience.com/wp-content/uploads/Cancun-Beaches-Aerial-NBS.jpg",
         )
 
         db.session.add(city52)
@@ -920,6 +971,7 @@ if __name__ == "__main__":
                 "SGD": 0.079,
             },
             currency_code="MXN",
+            img="https://lp-cms-production.imgix.net/2019-06/79620207.jpg",
         )
 
         db.session.add(city53)
@@ -937,6 +989,7 @@ if __name__ == "__main__":
                 "SGD": 0.056,
             },
             currency_code="CUP",
+            img="https://lp-cms-production.imgix.net/2019-06/25d1c7f222441f0294bb535b3b460390-camaguey.jpg",
         )
 
         db.session.add(city54)
@@ -954,6 +1007,7 @@ if __name__ == "__main__":
                 "SGD": 0.056,
             },
             currency_code="CUP",
+            img="https://www.iccaribbean.com/wp-content/uploads/2022/09/Santiago-de-Cuba.jpg",
         )
 
         db.session.add(city55)
@@ -971,6 +1025,7 @@ if __name__ == "__main__":
                 "SGD": 0.056,
             },
             currency_code="CUP",
+            img="https://content.r9cdn.net/rimg/dimg/a3/1d/05f2b4a1-city-11020-1700c4dba73.jpg?crop=true&width=1020&height=498",
         )
 
         db.session.add(city56)
@@ -988,6 +1043,7 @@ if __name__ == "__main__":
                 "SGD": 0.0025,
             },
             currency_code="CRC",
+            img="https://cdn.britannica.com/62/194162-050-C4D6DD9A/National-Theatre-San-Jose-Costa-Rica.jpg",
         )
 
         db.session.add(city57)
@@ -1005,6 +1061,7 @@ if __name__ == "__main__":
                 "SGD": 0.0025,
             },
             currency_code="CRC",
+            img="https://costarica.org/wp-content/uploads/2017/09/Limon2.jpg",
         )
 
         db.session.add(city58)
@@ -1022,6 +1079,7 @@ if __name__ == "__main__":
                 "SGD": 0.0025,
             },
             currency_code="CRC",
+            img="https://www.costaricavibes.com/wp-content/uploads/Copy-of-Packing-for-Costa-Rica.jpg",
         )
 
         db.session.add(city59)
@@ -1039,6 +1097,7 @@ if __name__ == "__main__":
                 "SGD": 0.28,
             },
             currency_code="BRL",
+            img="https://www.travelandleisure.com/thmb/x-LBqpaBsbUqGYtHu8gLnRMxPvg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/rio-de-janeiro-RIOTG0721-c59c5e2f3a354e798587d5ef925b23e3.jpg",
         )
 
         db.session.add(city60)
@@ -1056,6 +1115,7 @@ if __name__ == "__main__":
                 "SGD": 0.28,
             },
             currency_code="BRL",
+            img="https://a.cdn-hotels.com/gdcs/production31/d1095/2a0c9319-6599-4c14-98e5-e74d13eab669.jpg",
         )
 
         db.session.add(city61)
@@ -1073,6 +1133,7 @@ if __name__ == "__main__":
                 "SGD": 0.28,
             },
             currency_code="BRL",
+            img="https://www.cepal.org/sites/default/files/styles/1920x1080/public/regionaloffice/images/brasilia.jpg?itok=VuRo2Qua",
         )
 
         db.session.add(city62)
@@ -1090,6 +1151,7 @@ if __name__ == "__main__":
                 "SGD": 0.0049,
             },
             currency_code="ARS",
+            img="https://cdn.britannica.com/40/195440-050-B3859318/Congressional-Plaza-building-National-Congress-Buenos-Aires.jpg",
         )
 
         db.session.add(city63)
@@ -1107,6 +1169,7 @@ if __name__ == "__main__":
                 "SGD": 0.0049,
             },
             currency_code="ARS",
+            img="https://www.thewildlifediaries.com/wp-content/uploads/2021/11/Things-to-do-in-Cordoba-Roman-bridge-and-mosque-cathedral.jpg",
         )
 
         db.session.add(city64)
@@ -1124,26 +1187,10 @@ if __name__ == "__main__":
                 "SGD": 0.0049,
             },
             currency_code="ARS",
+            img="https://mediaim.expedia.com/destination/1/15c19af6d32f4bdb8f5f454dedd0554e.jpg",
         )
 
         db.session.add(city65)
-
-        city66 = City(
-            city_name="Rosario",
-            state_code="",
-            country_name="Argentina",
-            exchange_rate={
-                "EUR": 0.0033,
-                "AUD": 0.0055,
-                "USD": 0.0037,
-                "CAD": 0.0049,
-                "GBP": 0.0029,
-                "SGD": 0.0049,
-            },
-            currency_code="ARS",
-        )
-
-        db.session.add(city66)
 
         city67 = City(
             city_name="Lima",
@@ -1158,6 +1205,7 @@ if __name__ == "__main__":
                 "SGD": 0.37,
             },
             currency_code="PEN",
+            img="https://a.cdn-hotels.com/gdcs/production9/d1622/a10657d4-4f58-47ad-a91b-deecfa200dd0.jpg",
         )
 
         db.session.add(city67)
@@ -1175,6 +1223,7 @@ if __name__ == "__main__":
                 "SGD": 0.37,
             },
             currency_code="PEN",
+            img="https://www.peru.travel/Contenido/Destino/Imagen/en/16/1.1/Principal/Plaza%20de%20Armas%20Arequipa.jpg",
         )
 
         db.session.add(city68)
@@ -1192,6 +1241,7 @@ if __name__ == "__main__":
                 "SGD": 0.37,
             },
             currency_code="PEN",
+            img="https://deih43ym53wif.cloudfront.net/cusco-peru-shutterstock_346277210.jpg_45fc70bd52.jpg",
         )
 
         db.session.add(city69)
@@ -1209,6 +1259,7 @@ if __name__ == "__main__":
                 "SGD": 0.0016,
             },
             currency_code="CLP",
+            img="https://www.andbeyond.com/wp-content/uploads/sites/5/Cable-car-in-Santiago-city-in-Chile.jpg",
         )
 
         db.session.add(city70)
@@ -1226,6 +1277,7 @@ if __name__ == "__main__":
                 "SGD": 0.0016,
             },
             currency_code="CLP",
+            img="https://destinationlesstravel.com/wp-content/uploads/2022/08/View-of-Valparaiso-from-the-hills-behind-the-city.jpg.webp",
         )
 
         db.session.add(city71)
@@ -1243,6 +1295,7 @@ if __name__ == "__main__":
                 "SGD": 0.0016,
             },
             currency_code="CLP",
+            img="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gran_Concepci%C3%B3n.jpg/1200px-Gran_Concepci%C3%B3n.jpg",
         )
 
         db.session.add(city72)
@@ -1260,6 +1313,7 @@ if __name__ == "__main__":
                 "SGD": 0.00033,
             },
             currency_code="COP",
+            img="https://www.cepal.org/sites/default/files/styles/1920x1080/public/regionaloffice/images/bogota.jpg?itok=o3kfQd06",
         )
 
         db.session.add(city73)
@@ -1277,6 +1331,7 @@ if __name__ == "__main__":
                 "SGD": 0.00033,
             },
             currency_code="COP",
+            img="https://i.natgeofe.com/n/c5f625f7-a459-4afb-85c6-673224306569/downtown-medellin-colombia.jpg?w=2880&h=1912",
         )
 
         db.session.add(city74)
@@ -1294,6 +1349,7 @@ if __name__ == "__main__":
                 "SGD": 0.00033,
             },
             currency_code="COP",
+            img="https://media.cnn.com/api/v1/images/stellar/prod/190820104325-01-things-to-do-cartagena-colombia.jpg?q=x_0,y_0,h_2178,w_3870,c_fill",
         )
 
         db.session.add(city75)

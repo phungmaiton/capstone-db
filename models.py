@@ -62,7 +62,7 @@ class City(db.Model, SerializerMixin):
 
     prices = db.relationship("Price", backref="city", cascade="all, delete-orphan")
 
-    serialize_rules = ("-usercities",)
+    serialize_rules = ("-usercities", "-prices.city")
 
     @property
     def exchange_rate_object(self):
