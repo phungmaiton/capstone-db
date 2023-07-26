@@ -40,7 +40,7 @@ class User(db.Model, SerializerMixin):
     def __repr__(self):
         return f"<User {self.username}>"
 
-    serialize_rules = ("-_password_hash", "-usercities")
+    serialize_rules = ("-_password_hash", "-usercities", "-blogs.user")
 
     @validates("email")
     def validate_email(self, key, email):
@@ -58,6 +58,7 @@ class City(db.Model, SerializerMixin):
     country_name = db.Column(db.String)
     exchange_rate = db.Column(JSON)
     currency_code = db.Column(db.String)
+    img = db.Column(db.String)
 
     prices = db.relationship("Price", backref="city", cascade="all, delete-orphan")
 
@@ -114,3 +115,21 @@ class Price(db.Model, SerializerMixin):
         if not isinstance(avg_usd, float):
             raise ValueError("Must enter a valid price")
         return avg_usd
+
+
+class Blog(db.Model, SerializerMixin):
+    __tablename__ = "blogs"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(
+        "user_id",
+        db.Integer,
+        db.ForeignKey("users.id", ondelete="CASCADE"),
+    )
+    title = db.Column(db.String)
+    blog_body = db.Column(db.String)
+    blog_img = db.Column(db.String)
+    blog_city = db.Column(db.String)
+    blog_country = db.Column(db.String)
+
+    serialize_rules = ("-user.blogs",)

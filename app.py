@@ -4,7 +4,7 @@ from flask import Flask, make_response, request, session
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
 from flask_cors import CORS
-from models import db, User, City, Price, UserCity
+from models import db, User, City, Price, UserCity, Blog
 from sqlalchemy.exc import IntegrityError
 
 
@@ -180,6 +180,7 @@ class Cities(Resource):
             country_name=data["country_name"],
             exchange_rate=data["exchange_rate"],
             currency_code=data["currency_code"],
+            img=data["img"],
         )
 
         db.session.add(new_city)
@@ -290,6 +291,73 @@ class UserCityByID(Resource):
 
 
 api.add_resource(UserCityByID, "/usercities/<int:id>")
+
+# Blog
+
+
+class Blogs(Resource):
+    def get(self):
+        blogs = [blog.to_dict() for blog in Blog.query.all()]
+        return make_response(blogs, 200)
+
+    def post(self):
+        data = request.get_json()
+
+        try:
+            new_blog = Blog(
+                user_id=data["user_id"],
+                title=data["title"],
+                blog_body=data["blog_body"],
+                blog_city=data["blog_city"],
+                blog_country=data["blog_country"],
+                blog_img=data["blog_img"],
+            )
+            db.session.add(new_blog)
+            db.session.commit()
+            return make_response({"message": "success"}, 201)
+
+        except ValueError:
+            return make_response({"errors": ["validation errors"]}, 400)
+
+
+api.add_resource(Blogs, "/blogs")
+
+
+class BlogByID(Resource):
+    def get(self, id):
+        blog = Blog.query.filter(Blog.id == id).first()
+
+        if blog:
+            return make_response(blog.to_dict(), 200)
+        else:
+            return make_response({"error": "Blog not found"}, 404)
+
+    def patch(self, id):
+        blog = Blog.query.filter(Blog.id == id).first()
+
+        if blog:
+            data = request.get_json()
+            for key in data:
+                setattr(blog, key, data[key])
+            db.session.add(blog)
+            db.session.commit()
+            return make_response({"message": "success"}, 202)
+        else:
+            return make_response({"error": "Blog not found"}, 404)
+
+    def delete(self, id):
+        blog = Blog.query.filter(Blog.id == id).first()
+
+        if blog:
+            db.session.delete(blog)
+            db.session.commit()
+            return make_response({}, 204)
+        else:
+            return make_response({"error": "Blog not found"}, 404)
+
+
+api.add_resource(BlogByID, "/blogs/<int:id>")
+
 
 if __name__ == "__main__":
     app.run(port=5555, debug=True)
