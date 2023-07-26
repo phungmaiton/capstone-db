@@ -4,7 +4,7 @@ from flask import Flask, make_response, request, session
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
 from flask_cors import CORS
-from models import db, User, City, Price, UserCity, Blog
+from models import db, User, City, Price, UserCity, Blog, BlogComment
 from sqlalchemy.exc import IntegrityError
 
 
@@ -358,6 +358,64 @@ class BlogByID(Resource):
 
 api.add_resource(BlogByID, "/blogs/<int:id>")
 
+
+class BlogComments(Resource):
+    def get(self):
+        comments = [comment.to_dict() for comment in BlogComment.query.all()]
+        return make_response(comments, 200)
+
+    def post(self):
+        data = request.get_json()
+
+        try:
+            new_comment = BlogComment(
+                user_id=data["user_id"],
+                blog_id=data["blog_id"],
+                comment=data["comment"],
+            )
+            db.session.add(new_comment)
+            db.session.commit()
+            return make_response({"message": "success"}, 201)
+        except ValueError:
+            return make_response({"errors": ["validation errors"]}, 400)
+
+
+api.add_resource(BlogComments, "/comments")
+
+
+class BlogCommentByID(Resource):
+    def get(self, id):
+        comment = BlogComment.query.filter(BlogComment.id == id).first()
+
+        if comment:
+            return make_response(comment.to_dict(), 200)
+        return make_response({"error": "Comment not found"}, 404)
+
+    def patch(self, id):
+        comment = BlogComment.query.filter(BlogComment.id == id).first()
+
+        if comment:
+            data = request.get_json()
+            for key in data:
+                setattr(comment, key, data[key])
+            db.session.add(comment)
+            db.session.commit()
+            return make_response({"message": "success"}, 202)
+        else:
+            return make_response({"error": "Comment not found"}, 404)
+
+    def delete(self, id):
+        comment = BlogComment.query.filter(BlogComment.id == id).first()
+
+        if comment:
+            db.session.delete(comment)
+            db.session.commit()
+            return make_response({}, 204)
+        else:
+            return make_response({"error": "Comment not found"}, 404)
+
+
+api.add_resource(BlogCommentByID, "/blogs/<int:id>")
 
 if __name__ == "__main__":
     app.run(port=5555, debug=True)

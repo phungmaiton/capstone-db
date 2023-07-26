@@ -133,3 +133,27 @@ class Blog(db.Model, SerializerMixin):
     blog_country = db.Column(db.String)
 
     serialize_rules = ("-user.blogs",)
+
+
+class BlogComment(db.Model, SerializerMixin):
+    __tablename__ = "comments"
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    user_id = db.Column(
+        "user_id",
+        db.Integer,
+        db.ForeignKey("users.id", ondelete="CASCADE"),
+        primary_key=True,
+    )
+
+    blog_id = db.Column(
+        "blog_id",
+        db.Integer,
+        db.ForeignKey("blogs.id", ondelete="CASCADE"),
+        primary_key=True,
+    )
+
+    comment = db.Column(db.String)
+
+    serialize_rules = ("-user.comments", "-blog.comments")
