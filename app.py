@@ -107,6 +107,18 @@ class Logout(Resource):
 api.add_resource(Logout, "/logout", endpoint="logout")
 
 
+class CheckSession(Resource):
+    def get(self):
+        if session.get("user_id"):
+            user = User.query.filter(User.id == session["user_id"]).first()
+            return user.to_dict(), 200
+
+        return {"error": "401 Unauthorized"}, 401
+
+
+api.add_resource(CheckSession, "/check_session", endpoint="check_session")
+
+
 # Users
 class Users(Resource):
     def get(self):
