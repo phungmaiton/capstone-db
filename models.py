@@ -132,7 +132,8 @@ class Blog(db.Model, SerializerMixin):
     blog_city = db.Column(db.String)
     blog_country = db.Column(db.String)
 
-    def __init__(self, title, blog_body, blog_img, blog_city, blog_country):
+    def __init__(self, user_id, title, blog_body, blog_img, blog_city, blog_country):
+        self.user_id = user_id
         self.title = title.title()
         self.blog_body = blog_body
         self.blog_img = blog_img
