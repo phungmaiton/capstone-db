@@ -25,6 +25,8 @@ class User(db.Model, SerializerMixin):
     country = db.Column(db.String)
     currency_code = db.Column(db.String)
 
+    blogs = db.relationship("Blog", back_populates="user")
+
     @hybrid_property
     def password_hash(self):
         raise AttributeError("Password hashes may not be viewed.")
@@ -131,6 +133,8 @@ class Blog(db.Model, SerializerMixin):
     blog_img = db.Column(db.String)
     blog_city = db.Column(db.String)
     blog_country = db.Column(db.String)
+    user = db.relationship("User", back_populates="blogs")
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
 
     def __init__(self, user_id, title, blog_body, blog_img, blog_city, blog_country):
         self.user_id = user_id
