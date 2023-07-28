@@ -1,8 +1,14 @@
 from app import app
-from models import db, User, City, Price, UserCity, Blog
-
+from models import db, Blog
 
 if __name__ == "__main__":
     with app.app_context():
-        Blog.query.delete()
+        # Get all the blog records from the database
+        blogs = Blog.query.all()
+
+        # Update the blog_country field to "South Africa" for each blog record
+        for blog in blogs:
+            blog.blog_country = "South Africa"
+
+        # Commit the changes to the database
         db.session.commit()

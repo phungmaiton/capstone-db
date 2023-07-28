@@ -167,5 +167,6 @@ class BlogComment(db.Model, SerializerMixin):
     )
 
     comment = db.Column(db.String)
+    created_at = db.Column(db.DateTime, server_default=db.func.now())
 
     serialize_rules = ("-user.comments", "-blog.comments")
