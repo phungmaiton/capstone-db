@@ -1,5 +1,5 @@
 from app import app
-from models import db, Blog, User
+from models import db, Blog, User, BlogComment
 
 if __name__ == "__main__":
     with app.app_context():
@@ -13,8 +13,5 @@ if __name__ == "__main__":
         # # Commit the changes to the database
         # db.session.commit()
 
-        user = User.query.filter(User.id == 1).first()
-
-        user.profile_img = "https://media.istockphoto.com/id/1311084168/photo/overjoyed-pretty-asian-woman-look-at-camera-with-sincere-laughter.webp?b=1&s=170667a&w=0&k=20&c=XPuGhP9YyCWquTGT-tUFk6TwI-HZfOr1jNkehKQ17g0="
-
+        BlogComment.query.delete()
         db.session.commit()

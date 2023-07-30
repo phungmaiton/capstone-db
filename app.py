@@ -381,6 +381,7 @@ class BlogComments(Resource):
 
         try:
             new_comment = BlogComment(
+                id=data["id"],
                 user_id=data["user_id"],
                 blog_id=data["blog_id"],
                 comment=data["comment"],
@@ -388,8 +389,9 @@ class BlogComments(Resource):
             db.session.add(new_comment)
             db.session.commit()
             return make_response({"message": "success"}, 201)
-        except ValueError:
-            return make_response({"errors": ["validation errors"]}, 400)
+        except Exception as e:
+            db.session.rollback()
+            return {"errors": ["Validation errors", str(e)]}, 400
 
 
 api.add_resource(BlogComments, "/comments")

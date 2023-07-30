@@ -26,6 +26,7 @@ class User(db.Model, SerializerMixin):
     currency_code = db.Column(db.String)
 
     blogs = db.relationship("Blog", back_populates="user")
+    comments = db.relationship("BlogComment", back_populates="user")
 
     @hybrid_property
     def password_hash(self):
@@ -42,7 +43,12 @@ class User(db.Model, SerializerMixin):
     def __repr__(self):
         return f"<User {self.username}>"
 
-    serialize_rules = ("-_password_hash", "-usercities", "-blogs.user")
+    serialize_rules = (
+        "-_password_hash",
+        "-usercities",
+        "-blogs.user",
+        "-comments.user",
+    )
 
     @validates("email")
     def validate_email(self, key, email):
@@ -144,7 +150,9 @@ class Blog(db.Model, SerializerMixin):
         self.blog_city = blog_city.title()
         self.blog_country = blog_country
 
-    serialize_rules = ("-user.blogs",)
+    comments = db.relationship("BlogComment", back_populates="blog")
+
+    serialize_rules = ("-user.blogs", "-comments.blog", "-comments.blogs")
 
 
 class BlogComment(db.Model, SerializerMixin):
@@ -166,5 +174,7 @@ class BlogComment(db.Model, SerializerMixin):
 
     comment = db.Column(db.String)
     created_at = db.Column(db.DateTime, server_default=db.func.now())
+    blog = db.relationship("Blog", back_populates="comments")
+    user = db.relationship("User", back_populates="comments")
 
-    serialize_rules = ("-user.comments", "-blog.comments")
+    serialize_rules = ("-user.comments", "-blog.comments", "-user.comments")
