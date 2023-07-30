@@ -156,14 +156,12 @@ class BlogComment(db.Model, SerializerMixin):
         "user_id",
         db.Integer,
         db.ForeignKey("users.id", ondelete="CASCADE"),
-        primary_key=True,
     )
 
     blog_id = db.Column(
         "blog_id",
         db.Integer,
         db.ForeignKey("blogs.id", ondelete="CASCADE"),
-        primary_key=True,
     )
 
     comment = db.Column(db.String)
