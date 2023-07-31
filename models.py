@@ -92,14 +92,13 @@ class UserCity(db.Model, SerializerMixin):
         "user_id",
         db.Integer,
         db.ForeignKey("users.id", ondelete="CASCADE"),
-        primary_key=True,
     )
 
     city_id = db.Column(
         "city_id",
         db.Integer,
         db.ForeignKey("cities.id", ondelete="CASCADE"),
-        primary_key=True,
+        unique=True,
     )
 
     rating = db.Column(db.Integer)

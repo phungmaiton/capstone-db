@@ -267,7 +267,9 @@ class UserCities(Resource):
     def post(self):
         data = request.get_json()
 
-        new_uc = UserCity(user_id=data["user_id"], city_id=data["city_id"], rating=0)
+        new_uc = UserCity(
+            id=data["id"], user_id=data["user_id"], city_id=data["city_id"], rating=0
+        )
 
         db.session.add(new_uc)
         db.session.commit()

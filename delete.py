@@ -1,5 +1,5 @@
 from app import app
-from models import db, Blog, User, BlogComment
+from models import db, Blog, User, BlogComment, Price, UserCity
 
 if __name__ == "__main__":
     with app.app_context():
@@ -13,5 +13,9 @@ if __name__ == "__main__":
         # # Commit the changes to the database
         # db.session.commit()
 
-        BlogComment.query.delete()
+        # BlogComment.query.delete()
+        # db.session.commit()
+
+        UserCity.query.delete()
+
         db.session.commit()

@@ -7,20 +7,6 @@ if __name__ == "__main__":
         City.query.delete()
         Price.query.delete()
 
-        # user = User(
-        #     username="TestUser",
-        #     email="test@gmail.com",
-        #     city="Chantilly",
-        #     state="Virginia",
-        #     zipcode="20152",
-        #     country="United States",
-        #     currency_code="USD",
-        # )
-
-        # user.password_hash = "123"
-
-        # db.session.add(user)
-
         city1 = City(
             city_name="Johannesburg",
             state_code="",
@@ -1457,5 +1443,104 @@ if __name__ == "__main__":
         )
 
         db.session.add(price12)
+
+        price13 = Price(
+            city_id=2,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=8.03,
+        )
+
+        db.session.add(price13)
+
+        price14 = Price(
+            city_id=2,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=36.82,
+        )
+
+        db.session.add(price14)
+
+        price15 = Price(
+            city_id=2,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=1.34,
+        )
+
+        db.session.add(price15)
+
+        price16 = Price(
+            city_id=2,
+            item_name="One-way Ticket, Local Transport",
+            category_name="Transportation",
+            avg_usd=36.82,
+        )
+
+        db.session.add(price16)
+
+        price17 = Price(
+            city_id=2,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=1.02,
+        )
+
+        db.session.add(price17)
+
+        price18 = Price(
+            city_id=2,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=81.58,
+        )
+
+        db.session.add(price18)
+
+        price19 = Price(
+            city_id=2,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.13,
+        )
+
+        db.session.add(price19)
+
+        price20 = Price(
+            city_id=2,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=61.61,
+        )
+
+        db.session.add(price20)
+
+        price21 = Price(
+            city_id=2,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=706.43,
+        )
+
+        db.session.add(price21)
+
+        price22 = Price(
+            city_id=2,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=506.58,
+        )
+
+        db.session.add(price22)
+
+        price23 = Price(
+            city_id=2,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=1453.23,
+        )
+
+        db.session.add(price23)
 
         db.session.commit()
