@@ -48,6 +48,8 @@ class User(db.Model, SerializerMixin):
         "-usercities",
         "-blogs.user",
         "-comments.user",
+        "-comments",
+        "-blogs",
     )
 
     @validates("email")
@@ -151,7 +153,11 @@ class Blog(db.Model, SerializerMixin):
 
     comments = db.relationship("BlogComment", back_populates="blog")
 
-    serialize_rules = ("-user.blogs", "-comments.blog", "-comments.blogs")
+    serialize_rules = (
+        "-user.blogs",
+        "-comments.blog",
+        "-comments.blogs",
+    )
 
 
 class BlogComment(db.Model, SerializerMixin):
@@ -176,4 +182,7 @@ class BlogComment(db.Model, SerializerMixin):
     blog = db.relationship("Blog", back_populates="comments")
     user = db.relationship("User", back_populates="comments")
 
-    serialize_rules = ("-user.comments", "-blog.comments", "-user.comments")
+    serialize_rules = (
+        "-user.comments",
+        "-blog.comments",
+    )

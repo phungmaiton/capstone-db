@@ -1473,18 +1473,18 @@ if __name__ == "__main__":
 
         price16 = Price(
             city_id=2,
-            item_name="One-way Ticket, Local Transport",
+            item_name="Gasoline, 1 liter",
             category_name="Transportation",
-            avg_usd=36.82,
+            avg_usd=1.02,
         )
 
         db.session.add(price16)
 
         price17 = Price(
             city_id=2,
-            item_name="Gasoline, 1 liter",
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
             category_name="Transportation",
-            avg_usd=1.02,
+            avg_usd=20082.88,
         )
 
         db.session.add(price17)

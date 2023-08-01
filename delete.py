@@ -16,6 +16,6 @@ if __name__ == "__main__":
         # BlogComment.query.delete()
         # db.session.commit()
 
-        UserCity.query.delete()
-
+        comment = BlogComment.query.filter(BlogComment.id == 12).first()
+        db.session.delete(comment)
         db.session.commit()

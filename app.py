@@ -86,7 +86,7 @@ class Login(Resource):
         if user:
             if user.authenticate(password):
                 session["user_id"] = user.id
-                return user.to_dict(), 200
+                return user.to_dict(rules=("-blogs.comments", "-comments")), 200
 
         return {"error": "Invalid username or password"}, 401
 
@@ -111,7 +111,7 @@ class CheckSession(Resource):
     def get(self):
         if session.get("user_id"):
             user = User.query.filter(User.id == session["user_id"]).first()
-            return user.to_dict(), 200
+            return user.to_dict(rules=("-blogs.comments", "-comments")), 200
 
         return {"error": "401 Unauthorized"}, 401
 
@@ -122,7 +122,10 @@ api.add_resource(CheckSession, "/check_session", endpoint="check_session")
 # Users
 class Users(Resource):
     def get(self):
-        users = [user.to_dict() for user in User.query.all()]
+        users = [
+            user.to_dict(rules=("-blogs.comments", "-comments.blog"))
+            for user in User.query.all()
+        ]
 
         return make_response(users, 200)
 
@@ -135,7 +138,9 @@ class UserByID(Resource):
         user = User.query.filter(User.id == id).first()
 
         if user:
-            return make_response(user.to_dict(), 200)
+            return make_response(
+                user.to_dict(rules=("-blogs.comments", "-comments")), 200
+            )
         else:
             return make_response({"error": "User not found"}, 404)
 
@@ -164,7 +169,7 @@ class UserByID(Resource):
                 db.session.add(user)
                 db.session.commit()
 
-                return make_response({"message": "successful"}, 202)
+                return make_response(user.to_dict(), 202)
             except IntegrityError:
                 db.session.rollback()
                 return {"error": "Username already exists"}, 422
@@ -221,7 +226,7 @@ class CityByID(Resource):
                 setattr(city, key, data[key])
             db.session.add(city)
             db.session.commit()
-            return make_response({"message": "success"}, 202)
+            return make_response(city.to_dict(), 202)
         else:
             return make_response({"error": "City not found"}, 404)
 
@@ -289,6 +294,7 @@ class UserCityByID(Resource):
                 setattr(uc, key, data[key])
             db.session.add(uc)
             db.session.commit()
+            return make_response(uc.to_dict, 204)
         else:
             return make_response({"error": "Not found"}, 404)
 
@@ -311,7 +317,10 @@ api.add_resource(UserCityByID, "/usercities/<int:id>")
 
 class Blogs(Resource):
     def get(self):
-        blogs = [blog.to_dict() for blog in Blog.query.all()]
+        blogs = [
+            blog.to_dict(rules=("-comments.user.blogs", "-user.comments"))
+            for blog in Blog.query.all()
+        ]
         return make_response(blogs, 200)
 
     def post(self):
@@ -342,7 +351,10 @@ class BlogByID(Resource):
         blog = Blog.query.filter(Blog.id == id).first()
 
         if blog:
-            return make_response(blog.to_dict(), 200)
+            return make_response(
+                blog.to_dict(rules=("-comments.user", "-user.comments", "-comments")),
+                200,
+            )
         else:
             return make_response({"error": "Blog not found"}, 404)
 
@@ -355,7 +367,7 @@ class BlogByID(Resource):
                 setattr(blog, key, data[key])
             db.session.add(blog)
             db.session.commit()
-            return make_response({"message": "success"}, 202)
+            return make_response(blog.to_dict(), 202)
         else:
             return make_response({"error": "Blog not found"}, 404)
 
@@ -375,7 +387,10 @@ api.add_resource(BlogByID, "/blogs/<int:id>")
 
 class BlogComments(Resource):
     def get(self):
-        comments = [comment.to_dict() for comment in BlogComment.query.all()]
+        comments = [
+            comment.to_dict(rules=("-blog.user", "-user.blogs"))
+            for comment in BlogComment.query.all()
+        ]
         return make_response(comments, 200)
 
     def post(self):
@@ -416,7 +431,7 @@ class BlogCommentByID(Resource):
                 setattr(comment, key, data[key])
             db.session.add(comment)
             db.session.commit()
-            return make_response({"message": "success"}, 202)
+            return make_response(comment.to_dict(), 202)
         else:
             return make_response({"error": "Comment not found"}, 404)
 
