@@ -104,6 +104,17 @@ class UserCity(db.Model, SerializerMixin):
 
     rating = db.Column(db.Integer)
 
+    @validates("user_id", "city_id")
+    def validate_unique_user_city(self, key, value):
+        existing_entry = UserCity.query.filter_by(
+            user_id=self.user_id, city_id=self.city_id
+        ).first()
+
+        if existing_entry:
+            raise ValueError("Destination already in list")
+
+        return value
+
 
 class Price(db.Model, SerializerMixin):
     __tablename__ = "prices"
