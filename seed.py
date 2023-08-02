@@ -92,7 +92,7 @@ if __name__ == "__main__":
                 "SGD": 0.043,
             },
             currency_code="EGP",
-            img="https://www.egypttoursportal.com/images/2017/11/Alexandria-City-Egypt-Egypt-Tours-Portal.jpg",
+            img="https://www.celebritycruises.com/blog/content/uploads/2021/12/things-to-do-in-alexandria-egypt-harbor-hero.jpg",
         )
 
         db.session.add(city5)

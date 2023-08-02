@@ -369,7 +369,10 @@ class BlogByID(Resource):
                 setattr(blog, key, data[key])
             db.session.add(blog)
             db.session.commit()
-            return make_response(blog.to_dict(), 202)
+            return make_response(
+                blog.to_dict(rules=("-comments.user", "-user.comments", "-comments")),
+                202,
+            )
         else:
             return make_response({"error": "Blog not found"}, 404)
 
