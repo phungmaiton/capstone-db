@@ -100,7 +100,6 @@ class UserCity(db.Model, SerializerMixin):
         "city_id",
         db.Integer,
         db.ForeignKey("cities.id", ondelete="CASCADE"),
-        unique=True,
     )
 
     rating = db.Column(db.Integer)

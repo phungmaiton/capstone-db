@@ -169,7 +169,9 @@ class UserByID(Resource):
                 db.session.add(user)
                 db.session.commit()
 
-                return make_response(user.to_dict(), 202)
+                return make_response(
+                    user.to_dict(rules=("-blogs.comments", "-comments")), 202
+                )
             except IntegrityError:
                 db.session.rollback()
                 return {"error": "Username already exists"}, 422
