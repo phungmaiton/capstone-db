@@ -1642,103 +1642,1093 @@ if __name__ == "__main__":
 
         db.session.add(price32)
 
-        price24 = Price(
-            city_id=3,
+        price33 = Price(
+            city_id=4,
             item_name="Meal in Inexpensive Restaurant",
             category_name="Restaurants",
-            avg_usd=6.69,
+            avg_usd=5.09,
         )
 
-        db.session.add(price24)
+        db.session.add(price33)
 
-        price25 = Price(
-            city_id=3,
+        price34 = Price(
+            city_id=4,
             item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
             category_name="Restaurants",
-            avg_usd=33.47,
+            avg_usd=28.64,
         )
 
-        db.session.add(price25)
+        db.session.add(price34)
 
-        price26 = Price(
-            city_id=3,
+        price35 = Price(
+            city_id=4,
             item_name="Monthly Pass, Regular Price",
             category_name="Transportation",
-            avg_usd=50.21,
+            avg_usd=12.73,
         )
 
-        db.session.add(price26)
+        db.session.add(price35)
 
-        price25 = Price(
-            city_id=3,
+        price36 = Price(
+            city_id=4,
             item_name="Gasoline, 1 liter",
             category_name="Transportation",
-            avg_usd=1.02,
+            avg_usd=0.49,
         )
 
-        db.session.add(price25)
+        db.session.add(price36)
 
-        price26 = Price(
-            city_id=3,
+        price37 = Price(
+            city_id=4,
             item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
             category_name="Transportation",
-            avg_usd=20082.88,
+            avg_usd=26735.06,
         )
 
-        db.session.add(price26)
+        db.session.add(price37)
 
-        price27 = Price(
-            city_id=3,
+        price38 = Price(
+            city_id=4,
             item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
             category_name="Utilities Per Month",
-            avg_usd=81.58,
+            avg_usd=36.76,
         )
 
-        db.session.add(price27)
+        db.session.add(price38)
 
-        price28 = Price(
-            city_id=3,
+        price39 = Price(
+            city_id=4,
             item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
             category_name="Utilities Per Month",
-            avg_usd=0.12,
+            avg_usd=0.01,
         )
 
-        db.session.add(price28)
+        db.session.add(price39)
 
-        price29 = Price(
-            city_id=3,
+        price40 = Price(
+            city_id=4,
             item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
             category_name="Utilities Per Month",
-            avg_usd=65.08,
+            avg_usd=17.85,
         )
 
-        db.session.add(price29)
+        db.session.add(price40)
 
-        price30 = Price(
-            city_id=3,
+        price41 = Price(
+            city_id=4,
             item_name="One bedroom apartment in city centre",
             category_name="Rent Per Month",
-            avg_usd=348.64,
+            avg_usd=245.94,
         )
 
-        db.session.add(price30)
+        db.session.add(price41)
 
-        price31 = Price(
-            city_id=3,
+        price42 = Price(
+            city_id=4,
             item_name="One bedroom apartment outside of city centre",
             category_name="Rent Per Month",
-            avg_usd=331.24,
+            avg_usd=143.62,
         )
 
-        db.session.add(price31)
+        db.session.add(price42)
 
-        price32 = Price(
-            city_id=3,
+        price43 = Price(
+            city_id=4,
             item_name="Three bedroom apartment in city centre",
             category_name="Rent Per Month",
-            avg_usd=676.12,
+            avg_usd=487.90,
         )
 
-        db.session.add(price32)
+        db.session.add(price43)
+
+        price44 = Price(
+            city_id=5,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=3.18,
+        )
+
+        db.session.add(price44)
+
+        price45 = Price(
+            city_id=5,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=19.10,
+        )
+
+        db.session.add(price45)
+
+        price46 = Price(
+            city_id=5,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=9.55,
+        )
+
+        db.session.add(price46)
+
+        price47 = Price(
+            city_id=5,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.48,
+        )
+
+        db.session.add(price47)
+
+        price48 = Price(
+            city_id=5,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=25461.96,
+        )
+
+        db.session.add(price48)
+
+        price49 = Price(
+            city_id=5,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=22.26,
+        )
+
+        db.session.add(price49)
+
+        price50 = Price(
+            city_id=5,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.01,
+        )
+
+        db.session.add(price50)
+
+        price51 = Price(
+            city_id=5,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=14.77,
+        )
+
+        db.session.add(price51)
+
+        price52 = Price(
+            city_id=5,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=194.31,
+        )
+
+        db.session.add(price52)
+
+        price53 = Price(
+            city_id=5,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=111.75,
+        )
+
+        db.session.add(price53)
+
+        price54 = Price(
+            city_id=5,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=372.84,
+        )
+
+        db.session.add(price54)
+
+        price55 = Price(
+            city_id=6,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=4.46,
+        )
+
+        db.session.add(price55)
+
+        price56 = Price(
+            city_id=6,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=17.82,
+        )
+
+        db.session.add(price56)
+
+        price57 = Price(
+            city_id=6,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=4.61,
+        )
+
+        db.session.add(price57)
+
+        price58 = Price(
+            city_id=6,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.42,
+        )
+
+        db.session.add(price58)
+
+        price59 = Price(
+            city_id=6,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=25461.96,
+        )
+
+        db.session.add(price59)
+
+        price60 = Price(
+            city_id=6,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=43.50,
+        )
+
+        db.session.add(price60)
+
+        price61 = Price(
+            city_id=6,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.01,
+        )
+
+        db.session.add(price61)
+
+        price62 = Price(
+            city_id=6,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=15.37,
+        )
+
+        db.session.add(price62)
+
+        price67 = Price(
+            city_id=6,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=122.01,
+        )
+
+        db.session.add(price67)
+
+        price68 = Price(
+            city_id=6,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=152.77,
+        )
+
+        db.session.add(price68)
+
+        price69 = Price(
+            city_id=6,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=130.49,
+        )
+
+        db.session.add(price69)
+
+        price70 = Price(
+            city_id=7,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=4.54,
+        )
+
+        db.session.add(price70)
+
+        price71 = Price(
+            city_id=7,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=33.12,
+        )
+
+        db.session.add(price71)
+
+        price72 = Price(
+            city_id=7,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=29.39,
+        )
+
+        db.session.add(price72)
+
+        price73 = Price(
+            city_id=7,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.99,
+        )
+
+        db.session.add(price73)
+
+        price74 = Price(
+            city_id=7,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=15426.79,
+        )
+
+        db.session.add(price74)
+
+        price75 = Price(
+            city_id=7,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=43.07,
+        )
+
+        db.session.add(price75)
+
+        price76 = Price(
+            city_id=7,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.03,
+        )
+
+        db.session.add(price76)
+
+        price77 = Price(
+            city_id=7,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=54.30,
+        )
+
+        db.session.add(price77)
+
+        price78 = Price(
+            city_id=7,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=417.93,
+        )
+
+        db.session.add(price78)
+
+        price79 = Price(
+            city_id=7,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=170.60,
+        )
+
+        db.session.add(price79)
+
+        price80 = Price(
+            city_id=7,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=907.46,
+        )
+
+        db.session.add(price80)
+
+        price81 = Price(
+            city_id=8,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=3.18,
+        )
+
+        db.session.add(price81)
+
+        price82 = Price(
+            city_id=8,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=45.37,
+        )
+
+        db.session.add(price82)
+
+        price83 = Price(
+            city_id=8,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=45.37,
+        )
+
+        db.session.add(price83)
+
+        price84 = Price(
+            city_id=8,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=1.01,
+        )
+
+        db.session.add(price84)
+
+        price85 = Price(
+            city_id=8,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=15426.79,
+        )
+
+        db.session.add(price85)
+
+        price86 = Price(
+            city_id=8,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=30.25,
+        )
+
+        db.session.add(price86)
+
+        price87 = Price(
+            city_id=8,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.04,
+        )
+
+        db.session.add(price87)
+
+        price88 = Price(
+            city_id=8,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=45.37,
+        )
+
+        db.session.add(price88)
+
+        price89 = Price(
+            city_id=8,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=183.76,
+        )
+
+        db.session.add(price89)
+
+        price90 = Price(
+            city_id=8,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=147.46,
+        )
+
+        db.session.add(price90)
+
+        price91 = Price(
+            city_id=8,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=362.98,
+        )
+
+        db.session.add(price91)
+
+        price92 = Price(
+            city_id=9,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=4.54,
+        )
+
+        db.session.add(price92)
+
+        price93 = Price(
+            city_id=9,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=22.69,
+        )
+
+        db.session.add(price93)
+
+        price94 = Price(
+            city_id=9,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=22.69,
+        )
+
+        db.session.add(price94)
+
+        price95 = Price(
+            city_id=9,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.99,
+        )
+
+        db.session.add(price95)
+
+        price96 = Price(
+            city_id=9,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=15426.79,
+        )
+
+        db.session.add(price96)
+
+        price97 = Price(
+            city_id=9,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=31.76,
+        )
+
+        db.session.add(price97)
+
+        price98 = Price(
+            city_id=9,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.03,
+        )
+
+        db.session.add(price98)
+
+        price99 = Price(
+            city_id=9,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=18.15,
+        )
+
+        db.session.add(price99)
+
+        price100 = Price(
+            city_id=9,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=136.12,
+        )
+
+        db.session.add(price100)
+
+        price101 = Price(
+            city_id=9,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=90.75,
+        )
+
+        db.session.add(price101)
+
+        price102 = Price(
+            city_id=9,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=431.04,
+        )
+
+        db.session.add(price102)
+
+        price103 = Price(
+            city_id=10,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=1.97,
+        )
+
+        db.session.add(price103)
+
+        price104 = Price(
+            city_id=10,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=39.42,
+        )
+
+        db.session.add(price104)
+
+        price105 = Price(
+            city_id=10,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=26.28,
+        )
+
+        db.session.add(price105)
+
+        price106 = Price(
+            city_id=10,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.39,
+        )
+
+        db.session.add(price106)
+
+        price107 = Price(
+            city_id=10,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=17082.69,
+        )
+
+        db.session.add(price107)
+
+        price108 = Price(
+            city_id=10,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=28.31,
+        )
+
+        db.session.add(price108)
+
+        price109 = Price(
+            city_id=10,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.05,
+        )
+
+        db.session.add(price109)
+
+        price110 = Price(
+            city_id=10,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=41.82,
+        )
+
+        db.session.add(price110)
+
+        price111 = Price(
+            city_id=10,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=904.78,
+        )
+
+        db.session.add(price111)
+
+        price112 = Price(
+            city_id=10,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=677.87,
+        )
+
+        db.session.add(price112)
+
+        price113 = Price(
+            city_id=10,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=2824.59,
+        )
+
+        db.session.add(price113)
+
+        price114 = Price(
+            city_id=11,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=1.84,
+        )
+
+        db.session.add(price114)
+
+        price115 = Price(
+            city_id=11,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=21.02,
+        )
+
+        db.session.add(price115)
+
+        price116 = Price(
+            city_id=11,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=39.42,
+        )
+
+        db.session.add(price116)
+
+        price117 = Price(
+            city_id=11,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.41,
+        )
+
+        db.session.add(price117)
+
+        price118 = Price(
+            city_id=11,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=10512.42,
+        )
+
+        db.session.add(price118)
+
+        price119 = Price(
+            city_id=11,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=49.28,
+        )
+
+        db.session.add(price119)
+
+        price120 = Price(
+            city_id=11,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.06,
+        )
+
+        db.session.add(price120)
+
+        price121 = Price(
+            city_id=11,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=37.32,
+        )
+
+        db.session.add(price121)
+
+        price122 = Price(
+            city_id=11,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=1914.76,
+        )
+
+        db.session.add(price122)
+
+        price123 = Price(
+            city_id=11,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=733.99,
+        )
+
+        db.session.add(price123)
+
+        price124 = Price(
+            city_id=11,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=5431.42,
+        )
+
+        db.session.add(price124)
+
+        price125 = Price(
+            city_id=12,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=2.23,
+        )
+
+        db.session.add(price125)
+
+        price126 = Price(
+            city_id=12,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=7.88,
+        )
+
+        db.session.add(price126)
+
+        price127 = Price(
+            city_id=12,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=39.42,
+        )
+
+        db.session.add(price127)
+
+        price128 = Price(
+            city_id=12,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=0.39,
+        )
+
+        db.session.add(price128)
+
+        price129 = Price(
+            city_id=12,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=10512.42,
+        )
+
+        db.session.add(price129)
+
+        price130 = Price(
+            city_id=12,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=26.28,
+        )
+
+        db.session.add(price130)
+
+        price131 = Price(
+            city_id=12,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.06,
+        )
+
+        db.session.add(price131)
+
+        price132 = Price(
+            city_id=12,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=37.32,
+        )
+
+        db.session.add(price132)
+
+        price133 = Price(
+            city_id=12,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=289.09,
+        )
+
+        db.session.add(price133)
+
+        price134 = Price(
+            city_id=12,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=210.25,
+        )
+
+        db.session.add(price134)
+
+        price135 = Price(
+            city_id=12,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=919.84,
+        )
+
+        db.session.add(price135)
+
+        price136 = Price(
+            city_id=13,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=4.20,
+        )
+
+        db.session.add(price136)
+
+        price137 = Price(
+            city_id=13,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=28.00,
+        )
+
+        db.session.add(price137)
+
+        price138 = Price(
+            city_id=13,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=25.76,
+        )
+
+        db.session.add(price138)
+
+        price139 = Price(
+            city_id=13,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=1.12,
+        )
+
+        db.session.add(price139)
+
+        price140 = Price(
+            city_id=13,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=26324.54,
+        )
+
+        db.session.add(price140)
+
+        price141 = Price(
+            city_id=13,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=45.66,
+        )
+
+        db.session.add(price141)
+
+        price142 = Price(
+            city_id=13,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.15,
+        )
+
+        db.session.add(price142)
+
+        price143 = Price(
+            city_id=13,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=35.85,
+        )
+
+        db.session.add(price143)
+
+        price144 = Price(
+            city_id=13,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=482.03,
+        )
+
+        db.session.add(price144)
+
+        price145 = Price(
+            city_id=13,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=266.87,
+        )
+
+        db.session.add(price145)
+
+        price146 = Price(
+            city_id=13,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=906.61,
+        )
+
+        db.session.add(price146)
+
+        price147 = Price(
+            city_id=13,
+            item_name="Meal in Inexpensive Restaurant",
+            category_name="Restaurants",
+            avg_usd=4.20,
+        )
+
+        db.session.add(price147)
+
+        price137 = Price(
+            city_id=13,
+            item_name="Meal for 2 People, Mid-range Restaurant, Three-course",
+            category_name="Restaurants",
+            avg_usd=28.00,
+        )
+
+        db.session.add(price137)
+
+        price138 = Price(
+            city_id=13,
+            item_name="Monthly Pass, Regular Price",
+            category_name="Transportation",
+            avg_usd=25.76,
+        )
+
+        db.session.add(price138)
+
+        price139 = Price(
+            city_id=13,
+            item_name="Gasoline, 1 liter",
+            category_name="Transportation",
+            avg_usd=1.12,
+        )
+
+        db.session.add(price139)
+
+        price140 = Price(
+            city_id=13,
+            item_name="Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)",
+            category_name="Transportation",
+            avg_usd=26324.54,
+        )
+
+        db.session.add(price140)
+
+        price141 = Price(
+            city_id=13,
+            item_name="Basic utilities for 85m2 Apartment including Electricity, Heating or Cooling, Water and Garbage",
+            category_name="Utilities Per Month",
+            avg_usd=45.66,
+        )
+
+        db.session.add(price141)
+
+        price142 = Price(
+            city_id=13,
+            item_name="Prepaid Mobile Tariff Local, price per 1 min, No Discounts or Plans",
+            category_name="Utilities Per Month",
+            avg_usd=0.15,
+        )
+
+        db.session.add(price142)
+
+        price143 = Price(
+            city_id=13,
+            item_name="Internet, 60 Mbps or More, Unlimited Data, Cable/ADSL",
+            category_name="Utilities Per Month",
+            avg_usd=35.85,
+        )
+
+        db.session.add(price143)
+
+        price144 = Price(
+            city_id=13,
+            item_name="One bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=482.03,
+        )
+
+        db.session.add(price144)
+
+        price145 = Price(
+            city_id=13,
+            item_name="One bedroom apartment outside of city centre",
+            category_name="Rent Per Month",
+            avg_usd=266.87,
+        )
+
+        db.session.add(price145)
+
+        price146 = Price(
+            city_id=13,
+            item_name="Three bedroom apartment in city centre",
+            category_name="Rent Per Month",
+            avg_usd=906.61,
+        )
+
+        db.session.add(price146)
 
         db.session.commit()
