@@ -9,7 +9,7 @@ from sqlalchemy.exc import IntegrityError
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://nomadic-9gyn.onrender.com"}})
+CORS(app, resources={r"/*": {"origins": "https://phungmaiton.github.io/nomadic"}})
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///nomadic.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
